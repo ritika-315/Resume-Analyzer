@@ -7,7 +7,7 @@ An web application that analyzes resumes against job descriptions, calculates ma
 ## 🚀 Live Demo
 
 🔗 **Live Website:** https://YOUR_RENDER_LINK  
-📂 **GitHub Repo:** https://github.com/YOUR_USERNAME/ai-resume-analyzer  
+📂 **GitHub Repo:** https://github.com/ritika-315/ai-resume-analyzer  
 
 ---
 
