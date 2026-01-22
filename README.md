@@ -1,6 +1,6 @@
 # 🧠 Resume Analyzer & Job Match System
 
-An AI-powered web application that analyzes resumes against job descriptions, calculates match scores, identifies missing skills, provides improvement suggestions, visualizes skill gaps, and generates downloadable PDF reports.
+An web application that analyzes resumes against job descriptions, calculates match scores, identifies missing skills, provides improvement suggestions, visualizes skill gaps, and generates downloadable PDF reports.
 
 ---
 
@@ -37,6 +37,7 @@ An AI-powered web application that analyzes resumes against job descriptions, ca
 
 ## Demo Screenshots
 (Add screenshots here) 
+![alt text](image.png)
 
 ---
 
