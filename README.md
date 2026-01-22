@@ -95,21 +95,30 @@ http://127.0.0.1:8000
 
 ## ☁️ Deployment on Render
 Build Command
+
 pip install -r requirements.txt
 
 Start Command
+
 uvicorn app:app --host 0.0.0.0 --port 10000
 
 ---
 
 ## 📄 Sample Output
 JSON API Output
+
 {
+
   "score": 72.5,
+  
   "resume_skills": ["python", "sql", "machine learning"],
+  
   "job_skills": ["python", "sql", "react", "fastapi"],
+  
   "missing_skills": ["react", "fastapi"],
+  
   "tips": ["Consider learning React", "Consider learning FastAPI"],
+  
   "recommended_job": "Software Engineer"
 }
 
