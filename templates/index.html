@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Job Match Analyzer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Resume Analyzer</h1>
+    <p>Upload your resume and get ATS match report instantly.</p>
+    <div class="card">
+        <form id="form">
+            <input type="file" name="file" required><br><br>
+            <textarea name="job_description" placeholder="Paste Job Description" rows="8" cols="60"></textarea><br><br>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+    <div class="card">
+        <h3>Result:</h3>
+        <pre id="result"></pre>
+        <h3>Skill Match Graph:</h3>
+        <img id="graph" src="/static/skill_graph.png" width="500">
+        <br>
+        <a id="pdfLink" href="/static/resume_report.pdf" download>
+            <button>Download PDF Report</button>
+        </a>
+    </div>
+</div>
+
+<script>
+document.getElementById("form").onsubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const res = await fetch('/analyze', {method:'POST', body: formData});
+    const data = await res.json();
+
+    document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+
+    // Refresh graph image (avoid browser cache)
+    document.getElementById("graph").src = "/static/skill_graph.png?" + new Date().getTime();
+}
+</script>
+
+
+</body>
+</html>
