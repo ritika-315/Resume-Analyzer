@@ -76,7 +76,7 @@ bash
 
 git clone https://github.com/ritika-315/Resume-Analyzer.git
 
-cd ai-resume-analyzer
+cd Resume_Matcher
 
 ### 2️⃣ Install Dependencies
 pip install -r requirements.txt
