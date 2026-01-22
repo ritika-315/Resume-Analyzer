@@ -36,7 +36,6 @@ An web application that analyzes resumes against job descriptions, calculates ma
 ---
 
 ## Demo Screenshots
-(Add screenshots here) 
 ![alt text](image.png)
 
 ---
@@ -94,11 +93,11 @@ http://127.0.0.1:8000
 ---
 
 ## ☁️ Deployment on Render
-Build Command
+Build Command:
 
 pip install -r requirements.txt
 
-Start Command
+Start Command:
 
 uvicorn app:app --host 0.0.0.0 --port 10000
 
@@ -120,6 +119,7 @@ JSON API Output
   "tips": ["Consider learning React", "Consider learning FastAPI"],
   
   "recommended_job": "Software Engineer"
+  
 }
 
 Generated PDF Report Includes
