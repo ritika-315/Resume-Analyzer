@@ -74,7 +74,7 @@ An web application that analyzes resumes against job descriptions, calculates ma
 
 ### 1️⃣ Clone the Repository
 bash
-git clone https://github.com/YOUR_USERNAME/ai-resume-analyzer.git
+git clone https://github.com/ritika-315/ai-resume-analyzer.git
 cd ai-resume-analyzer
 
 ### 2️⃣ Install Dependencies
